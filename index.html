@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+  <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Book Store</title>
+    <script>
+          $(document).ready(function(){
+      $(".btn1").click(function(){
+        $("h5").slideUp();
+      });
+      $(".btn2").click(function(){
+        $("h5").slideDown();
+      });
+    });
+  </script>
+</head>
+<body>
+    <style>
+    body {
+      background-image: url('https://www.shutterstock.com/shutterstock/photos/642405643/display_1500/stock-vector-kids-hands-reading-library-books-blue-abstract-concept-ideal-for-flyers-642405643.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+    }
+    </style>
+    <h2><i>This our book store</i></h2>
+    <h2> Welcome&#128516;</h2>
+    <h5><i>Save for the next visit</i></h5>
+    <form>
+        <div>
+        <label>username</label>
+        <input type="text" required placeholder="username">
+        </div>
+    <br>
+        <div>
+        <label>age</label>
+        <input type="text" placeholder="age">
+        </div>
+    <br>
+        <div>
+        <label>password</label>
+        <input type="password" required placeholder="write a suitable password">
+        </div>
+    <br>
+        <div>
+        <label>email</label>
+        <input type="email" required  placeholder="write a valid email" value=" ">
+        </div>
+    <br>
+        <div>
+        <input type="submit" value="save">
+        </div>
+    </form>
+    <h5><i>Reading is fun right!</i></h5>
+    <button class="btn1">Slide up</button>
+    <button class="btn2">Slide down</button>
+  <h3 ><i>Contact us</i> <a href="mailtTo:bookStore@gmail.com">Contact</a></h3>
+<p><i> <span> <u>Reading</u> </span> is a very good habit that one needs to develop in life. Good books can inform you, enlighten you and lead you in the right direction. There is no better companion than a good book. Reading is important because it is good for your overall well-being. Once you start reading, you experience a whole new world. When you start loving the habit of reading you eventually get addicted to it. Reading develops language skills and vocabulary. Reading books is also a way to relax and reduce stress. It is important to read a good book at least for a few minutes each day to stretch the brain muscles for healthy functioning.</i></p>
+<div>
+  <ul type="I">
+    <h3><i><u>the different type of books </u></i></h3>
+    <li><i>Comedy</i></li>
+    <li><i>Action</i></li>
+    <li><i>Drama</i></li>
+    <li><i>Mystery</i></li>
+    <li><i> Romance</i></li>
+    <li><i>Adult</i></li>
+  </ul>
+  <div>
+    <label><i>what you searching for?</i></label>
+    <input type="text" id="searchInput" placeholder="Enter book title">
+    <button onclick="searchBooks()">Search</button>
+  </div>
+  <div id="searchResults">
+  </div>
+  <h3><i>There you can search for ur favorite book that we don't have in our book store</i> <a href="https://google.com".target="_blank" title="Go to Google">Google</a></h3>
+</div>
+  <h4><i><u>This is our book list included description</u></i></h4>
+<div id="id">
+  <nav>
+    <a href="https://en.wikipedia.org/wiki/Harry_Potter">Harry Potter</a>|
+    <a href="https://en.wikipedia.org/wiki/The_Great_Gatsby">the Great Gatsby</a>|
+    <a href="https://en.wikipedia.org/wiki/12_Rules_for_Life">12 Rules for Life</a>|
+    <a href="https://en.wikipedia.org/wiki/The_Alchemist_(novel)">The Alchemist</a>|
+    <a href="https://en.wikipedia.org/wiki/Anne_of_Green_Gables">Anne of Green Gables</a>|
+    <a href="https://en.wikipedia.org/wiki/The_Hobbit">The Hobbit</a>|
+    <a href="https://en.wikipedia.org/wiki/To_Kill_a_Mockingbird">To Kill a Mockingbird</a>|
+    <a href="https://en.wikipedia.org/wiki/The_Pillars_of_the_Earth#Adaptations">The Pillars of the Earth</a>|
+    <a href="https://en.wikipedia.org/wiki/Jane_Eyre">Jane Eyre</a>|
+</nav>
+</div> 
+<br>
+<h5>20$</h5>
+<img alt="" id="img1"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/HP_-_Harry_Potter_wordmark.svg/438px-HP_-_Harry_Potter_wordmark.svg.png">
+<img alt="" id="img2" src="https://upload.wikimedia.org/wikipedia/en/e/e9/First_Single_Volume_Edition_of_The_Lord_of_the_Rings.gif">
+<img alt="" id="img3" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Great_Gatsby_Cover_1925_Retouched.jpg/330px-The_Great_Gatsby_Cover_1925_Retouched.jpg">
+<img alt="" id="img4" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/12_Rules_for_Life_Front_Cover_%282018_first_edition%29.jpg/330px-12_Rules_for_Life_Front_Cover_%282018_first_edition%29.jpg">
+<img alt="" id="img5" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/TheAlchemist.jpg/330px-TheAlchemist.jpg">
+<img alt="" id="img6" src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Montgomery_Anne_of_Green_Gables.jpg">
+<img alt="" id="img7" src="https://upload.wikimedia.org/wikipedia/en/4/4a/TheHobbit_FirstEdition.jpg">
+<img alt="" id="img8" src="https://upload.wikimedia.org/wikipedia/en/b/b3/PillarsOfTheEarth.jpg">
+<img alt="" id="img9" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Jane_Eyre_title_page.jpg/800px-Jane_Eyre_title_page.jpg">
+<br>
+<div id="id1">
+<nav>
+  <a href="https://books.google.tn/books?id=TGkaEBEqiPUC&num=15&redir_esc=y">Nothing pink</a>|
+  <a href="https://en.wikipedia.org/wiki/Susan_Olasky">Susan Olasky</a>|
+  <a href="https://books.google.tn/books?id=N4c2K8JY7BEC&num=15&redir_esc=y">Sarai's Stripes</a>|
+  <a href="https://books.google.tn/books?id=Zr2_bAyLGaoC&num=15&redir_esc=y">Bruises</a>|
+  <a href="https://books.google.tn/books?id=izn7oVIg3msC&num=15&redir_esc=y">Aunt Jane's Nieces in the Red Cross</a>|
+  <a href="https://books.google.tn/books?id=77tJJX2JQ9IC&num=15&redir_esc=y">cut</a>|
+  <a href="https://books.google.tn/books?id=rSdXTkm0UPYC&num=15&redir_esc=y">Claude and Medea</a>|
+  <a href="https://books.google.tn/books?id=FlFeOUtH53YC&num=15&redir_esc=y">Sheep and Goat</a>|
+  <a href="https://books.google.tn/books?id=YqUrwg2oKMYC&num=15&redir_esc=y">Peter Pan</a>|
+</nav>
+</div>
+  <br>
+  <h5>15$</h5>
+  <img alt="" id="img10" src="https://books.google.tn/books/content?id=N0k1Z2as5SUC&printsec=frontcover&img=1&zoom=1&h=160&stbn=1">
+  <img alt="" id="img11" src="data:image/jpeg;base64,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">
+  <img alt="" id="img12" src="https://books.google.tn/books/content?id=N4c2K8JY7BEC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71IYJsBmGeOy0s1yJYLRkRCencu1pknN2nKfhBRVWRaGFgS2rQ9EhxDOWHmietbiw7BlyAUMZv_yIgrQsak1VeEvwJKW10iNjOwU2hO-oj7wtfU22cIDtosub2-2kYMyMSpc_Hf">
+  <img alt="" id="img13" src="https://books.google.tn/books/content?id=Zr2_bAyLGaoC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72DdWLx8qHPRbzPOiWf8oGbi2NHIFTPPaoho--fsTjZxBwfBZTjrCRKDUkvjiXfk7xZE7xfVJq7UlzYY7P-xryV-DKqpGPDE9nOL2A9KqCSZyIEvwKXCA4zxQ0DYCQHFhCIrc1s">
+  <img alt="" id="img14" src="https://books.google.tn/books/content?id=izn7oVIg3msC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE72-MI2dPLnRO6TRr3jIFY5zNKE8Ct0j4I_k7L0f0H0ruI6k2IHXjp5dSZRD8YguvBwmFQfS1rXK4o8gVpBrmg83sRtZNobijlHw2EPBtOwfQ3_OAOgDkjJcQ94w4CerzBvgOqnZ">
+  <img alt="" id="img15" src="https://books.google.tn/books/content?id=77tJJX2JQ9IC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73ARqKnEgZinPMm_85_A89iyE1u6IIBHoy4nKN0J2ZOeV6OgkO20jRzxdBpl0jYaPbaE3QkGdDsipM0i48dJQzt6elTAIH2Qe3wu05lZeid1DLLjXEFMOBG1CTI4hB5fKyRlAOG">
+  <img alt="" id="img16" src="https://books.google.tn/books/content?id=rSdXTkm0UPYC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE7142v8Z_f4oOXZ1mCPwGErMWJQT13bpa0bI_g6TNxr8G0lX5tHfJJq-WTLkitqpW2fd47ERa5pVGCG6oo3MDvqQWcrQHJxsIFzm_Tftnn7EResoH1XgASdZCUhwFVfu2ZNpYUA_">
+  <img alt="" id="img17" src="https://books.google.tn/books/content?id=FlFeOUtH53YC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71uhtS6rBya4_b-70O4eSGu-Ln0FYCoV1P-Q8c_yEh4hV76lmGKaWpMPNY19ZTU6YpFZP3NJfMgJbKpvnOf4Ny3CSp4WEabELuLB9P_uP6S5Eej0h6vkRcrEK2r_1oVBPnFfyvU">
+  <img alt="" id="img18" src="https://books.google.tn/books/content?id=YqUrwg2oKMYC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE73_YsWdUveuZlII6o6c1U3oj-iRV4Q5O3H9DGT6vuC3vG5YdRlQDE8M-JuLUeHuPjXl5pZ17KrcQg0mNy2QNjdKk6gV_0IGSzXi50gQvOIvX9V62bJIzIJ_Uy53PSIo6l_cCyCy">
+</div>
+<br>
+<div id="id2">
+<nav>
+<a href="https://books.google.tn/books?id=8q9hQ5vi3tYC&num=15&redir_esc=y">I Had to Say Something</a>|
+<a href="https://books.google.tn/books?id=KYs2iT4brBQC&num=15&redir_esc=y">Crazy Town</a>|
+<a href="https://books.google.tn/books?id=edk4MM_QK_4C&source=gbs_slider_cls_metadata_1021_mylibrary&redir_esc=y">Narratives of Exile and Return</a>|
+<a href="https://books.google.tn/books?id=6nkMShGgs7oC&source=gbs_slider_cls_metadata_1021_mylibrary&redir_esc=y">McFarlandCharlie Gehringer</a>|
+<a href="https://books.google.tn/books?id=CoTzF1Lvf1UC&source=gbs_slider_cls_metadata_1021_mylibrary&redir_esc=y">Childbed Fever</a>|
+<a href="https://books.google.tn/books?id=ikiv99-nTasC&num=15&redir_esc=y">Till They Meet Again</a>|
+<a href="https://books.google.tn/books?id=5mS9UBcs300C&num=15&redir_esc=y">Scoundrels to the Hoosegow</a>|
+<a href="https://books.google.tn/books?id=hJEVWLxOWGoC&num=15&redir_esc=y">Hitler Made Me a Jew</a>|
+<a href="https://books.google.tn/books?id=gvjF2HtXJw8C&source=gbs_slider_cls_metadata_1021_mylibrary&redir_esc=y">My Dirty Little Secrets - Steroids, Alcohol & God</a>
+</nav>
+<br>
+</div>
+<h5>10$</h5>
+<br>
+<img alt="" id="img19" src="https://books.google.tn/books/content?id=8q9hQ5vi3tYC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72P1qEKkBQm7mqzXPru1ppzJVQgL14oKn96Ox5TljZi_TSxY0aBsrNB6mV85-jA5Xo9ujxvlbaKYVNAkcchky6lsy8gBgf0z5QqprNY-xc9Ic-SHaonsKBhj8TGujbAeimm06lu">
+<img alt="" id="img20" src="https://books.google.tn/books/content?id=KYs2iT4brBQC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73aqAB9b2IswXMR-c-fCcAMz6YQlks5mOptEkqPmxmou4LPms1YcipV50ZqQMhiRu-FiDbXoLhIfsQ3_q1CjFpC-7dLWFwVucq1XVKu7ojm2wJIqetIRcZSdQDZTrpiZ2OXZLGB">
+<img alt="" id="img21" src="https://books.google.tn/books/content?id=edk4MM_QK_4C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71mI-e5yDg4Xfq8OPP5jmsHsLhbYDpqwyEUY3eP2WUtKgptxgG3dVyMgLyzsymo5F-hCNfJk5wY_0ScZIrzE-bdF0cgKlQf3YudhFK7Lzw0Yw4ePRoSvx_FDtIWFY03NE3aqKYC">
+<img alt="" id="img22" src="https://books.google.tn/books/content?id=6nkMShGgs7oC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73GSEQhFAKQe6dIEluWk8Hw4wJC1eV38iqY4I_dOpG07JrLGx5bKw6oBlXLtek4MTIEl-yz_-MTAMlXNPiyDKAaDZiQ5fiTD1NwEWgqFg-N9afAc_g4-nfwCnHNHgD5MvTiNcPS">
+<img alt="" id="img23" src="https://books.google.tn/books/content?id=CoTzF1Lvf1UC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE7039xcMm-HlCxc496_vM_ZkcfMrBhdBr_qbTs6-0H3g5lwxpdGdSixKK_9hgiTPsOl6xv1UY0nrXx3a6mh4Ye8QfUqgCw927tPSJDvrHIu5zX3DnPVKRA4cPMfBnBQbG6gebSOC">
+<img alt="" id="img24" src="https://books.google.tn/books/content?id=ikiv99-nTasC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71NxAt5yIMO2gvd4PO-4OtB6CvVzPF6jfa6gCbIFPG5gzfimxw5H-eSFfHvh3SglCAgb8KMrs1DsYXkRe81UiNGEHn_pXBkOYCoi3W5e-IyHcSkl_gdk2Ev0dV5XJ4NvEhviE_o">
+<img alt="" id="img25" src="https://books.google.tn/books/content?id=5mS9UBcs300C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72TDeck3zZMEvM-bcCZocafOYeek4A_SzRZuX5ahroYVKcM5ptWSyfGVZEfzApXI_v0ODpI7_VG0_U7lOJAqsAZofistqens9spLUjY2xit0YCumGWPFCAXVAXm70UNxWZn4XXj">
+<img alt="" id="img26" src="https://books.google.tn/books/content?id=hJEVWLxOWGoC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71d7ZJ97eOaudhzhohl9GJXz20V5GUN2nZLIayoDsZwBawIJvl6kZGEykXBVNWpOZ98cKQrzxp2KMf_qDJ_6y_YIHvVwSEi0eCZJM10vMbVDvmcCdreaHFepdMq6eurUxoonpZe">
+<img alt="" id="img27" src="https://books.google.tn/books/content?id=gvjF2HtXJw8C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE71Vs46CgHwcmtFvJjNju2N8E0vQ4S38wePq1cvctGCpce7sG1R9zD8etJ6RA6zPyqvGHUZa0R_DWYOWkf4UFtHhHscNjMclPTQPXVxixGQFsLqMdJS-mCuEgIFPWW9jmcDSPGUM">
+<div id="id3">
+<nav>
+<a href="https://books.google.tn/books?id=15d1CBrz2jEC&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">Masonry</a>|
+<a href="https://books.google.tn/books?id=T_oeYHNi9EUC&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">Experiments with Alternate Currents of High Potential and High Frequency</a>|
+<a href="https://books.google.tn/books?id=0imtg46iWy8C&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">Green Warriors</a>|
+<a href="https://books.google.tn/books?id=cU6GkiWbcTMC&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">Environmental Flows in Water Resources Policies, Plans, and Projects</a>|
+<a href="https://books.google.tn/books?id=p0e2_UfOGckC&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">A Century of Subways</a>|
+<a href="https://books.google.tn/books?id=CZ3qK_9QS-EC&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">A Guide to High-performance Powder Coating</a>|
+<a href="https://books.google.tn/books?id=hwo4arRat5EC&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">Hard Air</a>|
+<a href="https://books.google.tn/books?id=uTYb1hRfCz8C&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">The Electronic Republic?</a>|
+<a href="https://books.google.tn/books?id=c-4Yu34IhycC&source=gbs_slider_cls_metadata_1033_mylibrary&redir_esc=y">Crisis and Opportunity</a>|
+</nav>
+</div>
+<h5>5$</h5>
+<br>
+<img alt="" id="img28" src="https://books.google.tn/books/content?id=15d1CBrz2jEC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71YPbFMY7Xh9MLQX45Q6mdu3GTyvrUcHAndxyuTdWJm0khtXQfcnbhBxxiQWPB3RE363Os58zKBcb2KoQ_WA1nFFkx-5DqrcYVnwpl5142HZ2mVtMb_ll8FuUlR7P9VpoFmBk59">
+<img alt="" id="img29" src="https://books.google.tn/books/content?id=T_oeYHNi9EUC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71sKwnSSoum3PerXCrUh8L8vMlb3hJfKXssH0zb0BJWod1tsQslgTGRocbhP2RgcwMx7DbqKiDLec6Y1JDIvUsaaPpjTEIMkyJapEp1V_NW4uLXhe4vjtRYN48vZl5j0azvIYaW">
+<img alt="" id="img30" src="https://books.google.tn/books/content?id=0imtg46iWy8C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE73vfylf1NlT7TePeS19u6YWnpME2E-Whb1VnZ4pIb0cdP3WbwCDEqoYfKnytQpuabuDnrtvgAhRE_7FsLWLJPrT6R-TrC876Vu9ptlClCVUAMndWvKP-kMgzMsvWBXppTEbXZF0">
+<img alt="" id="img31" src="https://books.google.tn/books/content?id=cU6GkiWbcTMC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70CUL2YvSTkyrpD1iXqkikk_NIxWofl7AshhtArnYKNY4gUfb8SxxjwJLQo1r7PGmRiLi3xPb3q50Jiy3H2XolokPu7yWYGx-t0qduPu9UALG6Pl0CkvTRzBg5og8cyOct-zmuT">
+<img alt="" id="img32" src="https://books.google.tn/books/content?id=p0e2_UfOGckC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72HV_GzP7zRqJfj0cPtgN-EKMoFXctN1oOJW8I763P-1Fl8mosrs9BvbnZXRRO65Qr-Uq74fSV7GRSaPDu94Bz-RrR04PUAmdp0wMr5Fbp1vUEJpi3TNqSOpxY1ayVNZHOiGJov">
+<img alt="" id="img33" src="https://books.google.tn/books/content?id=CZ3qK_9QS-EC&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE71eGHfhjbbPhlYjm8T9KcbTu-chrtcfxZrSlMswyedkpWzRSC_k7wwruNUG80aWsQjvHqwwFrfv2tgAqhtba12dom_xb-OEs2P88Kc9EQc9m0npuwCUPmqkHOSkgj_OMWQ5rKPb">
+<img alt="" id="img34" src="https://books.google.tn/books/content?id=hwo4arRat5EC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE72Xx3pNzwaLjI5T4iJiorDMZ0bY8Jqm3H32ugPnszSeZRo4uud_3rJiVcloLc0ZXOg4u9rGO05_rRqSlHLQSxLwaR--vpeF108aUoPT31l1XOK_aG9tAs58XwHB4cQkNCYTJYIi">
+<img alt="" id="img35" src="https://books.google.tn/books/content?id=uTYb1hRfCz8C&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70-IKJfcteFaeCKWLpIIhRJeWhzGwgeMZ21Cd8hi4AT7zXLazK-A6VgzKLnK8QtbZoaevYabtz-qganFA7nN-22HZTm-vOPi0X8OHJNvptVlaL68W-fXAbx3j8Vc-6RCFc0A5Jc">
+<img alt="" id="img36" src="https://books.google.tn/books/content?id=c-4Yu34IhycC&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE716z-MKS8VA4Vh6XUb81wON0kR9l-8clbvMAUagooqnYKzTIUq1Ary-kZDoPet_iF0BjwgtayXol56mCcnvWVZbcVss7Qji4PA-CQw5fFumKEpyHwLp17hSH46JrjJmLm6i0yCH">
+<br>
+  <aside>
+    <p>“The more that you read, the more things you will know. The more that you learn, the more places you'll go.”</p>
+    <h6>Dr. Seuss (American children's author, political cartoonist, illustrator, poet, animator, and filmmaker)</h6>
+    </aside>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+    integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous">
+</script>
+<script src="index.js"></script>
+</body>
+</html>
